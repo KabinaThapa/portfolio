@@ -6,7 +6,7 @@ function App() {
  
   return (
     <>
-    <div>
+    <div className=''>
       <Sidenav />
       <Home/>
       </div>
