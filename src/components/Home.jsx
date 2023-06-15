@@ -1,14 +1,15 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import potrait from '../images/Potrait.jpg'
 
 const Home = () => {
   return (
     <div id="Home">
-      <div className="mainBox flex flex-col justify-center items-center w-full h-screen bg-slate-300 md:flex-row">
-        <div className="introBox max-w-[350px] w-full  bg-slate-400  flex flex-col justify-center">
-          <h1 className="font-bold text-4xl mb-4">I'm Kabina Thapa</h1>
-          <h2 className="flex text-2xl text-gray-800">
+      <div className="mainBox flex flex-col max-w-full h-screen justify-center bg-slate-300 pl-4 pr-4 pt-12 pb-12 items-center md:ml-12 md:mr-12 md:flex-row">
+        <header className="introBox max-w-[350px] w-full flex flex-col bg-slate-400 justify-center mt-12 items-center md:items-start md:mr-4 ">
+          <h1 className="font-bold text-4xl mb-2 pt-2 text-center ">I'm Kabina Thapa</h1>
+          <h2 className=" md:text-2xl text-[20px] text-gray-600 text-center md:text-left md:flex">
             {" "}
             I'm a
             <TypeAnimation
@@ -30,22 +31,25 @@ const Home = () => {
               cursor={true}
             />
           </h2>
-          <div className="logos flex justify-between max-w-[150px] mt-4 pb-1">
-            <a>
+          <div className="logos flex justify-between max-w-[150px] w-full mt-2 mb-4 p-1 bg-slate-500">
+            <a className="pr-3">
               <FaTwitter size={20} />
             </a>
-            <a>
+            <a className="pr-3">
               <FaFacebook size={20} />
             </a>
-            <a>
+            <a className="pr-3">
               <FaInstagram size={20} />
             </a>
-            <a>
+            <a className="pr-3">
               <FaLinkedin size={20} />
             </a>
           </div>
-        </div>
-      <div className=" max-w-[350px] w-full h-[10rem] bg-slate-600 mt-5 ">f</div>
+        </header>
+      <div className=" max-w-[350px] w-full md:h-screen bg-slate-600 mt-2 md:mr-6">
+        <img className="md:h-full" src={potrait}/>
+      </div>
+      
       </div>
     </div>
   );
