@@ -12,6 +12,7 @@ function App() {
     <div>
       <Sidenav />
       <Home/>
+      <Contact/>
       </div>
      
     </>
