@@ -2,9 +2,9 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div id="Contact" className=' m-auto pl-4 pr-4 bg-slate-400 max-w-full md:pl-16 md:pr-16'>
-      <h1 className='text-center'>Contact</h1>
-      <form action='' method='POST' encType='multiple/form-data'>
+    <div id="Contact " className=' m-auto pl-4 pr-4 bg-slate-400 max-w-[1080px] md:pl-16 md:pr-16'>
+      <h1 className='text-center text-[3rem] font-semibold mb-8'>Contact Me</h1>
+      <form action='https://formspree.io/f/mrgvnoqb' method='POST' encType='multiple/form-data'>
         <div className='w-full grid md:grid-cols-2 gap-4 lg:gap-12'>
           <div className='flex flex-col'>
         <label>Name</label>
