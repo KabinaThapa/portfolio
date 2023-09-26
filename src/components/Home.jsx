@@ -2,28 +2,29 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import potrait from '../images/Potrait.jpg'
-import Sidenav from "./sidenav";
+
 
 const Home = () => {
   return (
-    <div id="Home">
-      <Sidenav/>
-      <div className="mainBox flex flex-col max-w-full h-screen justify-between bg-slate-300  pr-4 pt-12 pb-12 items-center md:ml-20 md:mr-20 md:flex-row">
-        <header className="introBox max-w-[600px] w-full ml-4 mr-4 flex flex-col bg-slate-400 justify-center mt-12 items-center md:items-start md:mr-4 ">
-          <h1 className="font-bold lg:text-[3rem] text-[1.5rem] mb-2 pt-2 text-center ">I'm Kabina Thapa</h1>
-          <h2 className=" lg:text-[2rem] text-[1rem] text-gray-600 text-center md:text-left md:flex">
+    <div className="Home border flex justify-center items-center ">
+      
+      <div className="mainBox flex flex-col max-w-full h-screen justify-between   pr-4 pt-12 pb-12 items-center md:ml-20 md:mr-20 md:flex-row">
+        <header className="introBox max-w-[600px] w-full ml-4 mr-4 flex flex-col  justify-center mt-12 items-center md:items-start md:mr-4 ">
+          <h1 className="text-4xl">Hi !</h1>
+          <h1 className="font-bold lg:text-3xl text-[1.5rem] mb-2 pt-2 text-center ">I'm Kabina Thapa</h1>
+          <h2 className=" lg:text-2xl text-[1rem] text-gray-600 text-center md:text-left md:flex">
             {" "}
-            I'm a
+            I'm
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
-                "Developer",
+                "a Developer",
                 1000, // wait 1s before replacing "Mice" with "Hamsters"
-                "UI/UX Designer",
+                "a UI/UX Designer",
                 1000,
-                "Artist",
+                "an Artist",
                 1000,
-                "Tech Enthusiast",
+                "a Tech Enthusiast",
                 1000,
               ]}
               wrapper="div"
@@ -33,7 +34,7 @@ const Home = () => {
               cursor={true}
             />
           </h2>
-          <div className="logos flex justify-between max-w-[250px] w-full mt-2  p-1 bg-slate-500">
+          <div className="logos flex justify-between max-w-[250px] w-full mt-2  p-1 ">
             <a className="pr-3">
               <FaTwitter size={25} />
             </a>
