@@ -1,8 +1,11 @@
 import React from 'react'
+import Sidenav from './sidenav'
 
 const Project = () => {
   return (
-    <div id="Projects">Project</div>
+    <div id="Projects">
+      <Sidenav/>
+    </div>
   )
 }
 

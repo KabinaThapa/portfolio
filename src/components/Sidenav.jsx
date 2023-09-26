@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {AiOutlineHome, AiOutlineMenu, AiOutlineProject, AiOutlineContacts} from 'react-icons/ai'
 import {BsPerson} from 'react-icons/bs'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 //Sidenav arrow function handles nav, initially setNav is not rendered. setNav is called when the 
 //Aioutlinemenu is clicked.
@@ -44,7 +44,7 @@ const Sidenav = () => {
         }
         <div className='md:block hidden bg-slate-400'> 
           <div className='flex flex-col fixed top-1/4'>
-            <Link to="/Home" className='relative group border-1 flex justify-center  items-center rounded-full lg:p-4 md:p-2 m-2 bg-slate-100 shadow-md shadow-gray-700 cursor-pointer hover:scale-110 ease-in duration-200'> 
+            <Link to="/" className='relative group border-1 flex justify-center  items-center rounded-full lg:p-4 md:p-2 m-2 bg-slate-100 shadow-md shadow-gray-700 cursor-pointer hover:scale-110 ease-in duration-200'> 
             <AiOutlineHome size={25 } />
             <span className="absolute bg-slate-100 left-16 rounded-md  opacity-0  p-2 transition-opacity duration-200 group-hover:opacity-100 pointer-events-none">
         Home
@@ -65,6 +65,7 @@ const Sidenav = () => {
 
           </div>
         </div>
+        <Outlet/>
     </div>
   )
 }
