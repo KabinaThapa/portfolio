@@ -2,10 +2,12 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import potrait from '../images/Potrait.jpg'
+import Sidenav from "./sidenav";
 
 const Home = () => {
   return (
     <div id="Home">
+      <Sidenav/>
       <div className="mainBox flex flex-col max-w-full h-screen justify-between bg-slate-300  pr-4 pt-12 pb-12 items-center md:ml-20 md:mr-20 md:flex-row">
         <header className="introBox max-w-[600px] w-full ml-4 mr-4 flex flex-col bg-slate-400 justify-center mt-12 items-center md:items-start md:mr-4 ">
           <h1 className="font-bold lg:text-[3rem] text-[1.5rem] mb-2 pt-2 text-center ">I'm Kabina Thapa</h1>

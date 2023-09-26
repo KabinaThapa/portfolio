@@ -18,23 +18,23 @@ const Sidenav = () => {
         {
           nav ? (
             <div className= 'fixed w-full h-screen flex-col flex justify-center items-center md:mr-4'>
-              <a href="#Home" className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-300 cursor-pointer hover:scale-110 ease-in duration-200">
+              <Link to="/" className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-300 cursor-pointer hover:scale-110 ease-in duration-200">
              
                 <AiOutlineHome size={20}/>
                 <span className='pl-2 '> Home</span>
-              </a>
-              <a href="#Projects" className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-500 cursor-pointer hover:scale-110 ease-in duration-200">
+              </Link>
+              <Link to="/Projects" className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-500 cursor-pointer hover:scale-110 ease-in duration-200">
                 <AiOutlineProject size={20}/>
                 <span className='pl-2'> Projects</span>
-              </a>
-              <a href="#Resume" className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-300 cursor-pointer hover:scale-110 ease-in duration-200">
+              </Link>
+              <Link to ="/Resume" className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-300 cursor-pointer hover:scale-110 ease-in duration-200">
                 <BsPerson size={20}/>
                 <span className='pl-2'> Resume</span>
-              </a>
-              <a href="#Contact" className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-300 cursor-pointer hover:scale-110 ease-in duration-200">
+              </Link>
+              <Link to="/Contact" className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-300 cursor-pointer hover:scale-110 ease-in duration-200">
                 <AiOutlineContacts size={20}/>
                 <span className='pl-2'>Contact</span>
-              </a>
+              </Link>
                
             </div>
           )
@@ -44,24 +44,24 @@ const Sidenav = () => {
         }
         <div className='md:block hidden bg-slate-400'> 
           <div className='flex flex-col fixed top-1/4'>
-            <a href="#Home" className='relative group border-1 flex justify-center  items-center rounded-full lg:p-4 md:p-2 m-2 bg-slate-100 shadow-md shadow-gray-700 cursor-pointer hover:scale-110 ease-in duration-200'> 
+            <Link to="/Home" className='relative group border-1 flex justify-center  items-center rounded-full lg:p-4 md:p-2 m-2 bg-slate-100 shadow-md shadow-gray-700 cursor-pointer hover:scale-110 ease-in duration-200'> 
             <AiOutlineHome size={25 } />
             <span className="absolute bg-slate-100 left-16 rounded-md  opacity-0  p-2 transition-opacity duration-200 group-hover:opacity-100 pointer-events-none">
         Home
       </span>
-            </a>
-            <a href="#Projects" className='group border-1 flex justify-center items-center rounded-full lg:p-4 md:p-2 m-2 bg-slate-100 shadow-md shadow-gray-700 cursor-pointer hover:scale-110 ease-in duration-200'> <AiOutlineProject size={25}/>
+            </Link>
+            <Link to="/Projects" className='group border-1 flex justify-center items-center rounded-full lg:p-4 md:p-2 m-2 bg-slate-100 shadow-md shadow-gray-700 cursor-pointer hover:scale-110 ease-in duration-200'> <AiOutlineProject size={25}/>
             <span className="absolute bg-slate-100 left-16 rounded-md  opacity-0  p-2 transition-opacity duration-200 group-hover:opacity-100 pointer-events-none">
         Projects
-      </span></a>
-            <a href="#Resume" className=' group border-1 flex justify-center items-center  rounded-full lg:p-4 md:p-2 m-2 bg-slate-100 shadow-md shadow-gray-700 cursor-pointer hover:scale-110 ease-in duration-200'> <BsPerson size={25}/>
+      </span></Link>
+            <Link to="/Resume" className=' group border-1 flex justify-center items-center  rounded-full lg:p-4 md:p-2 m-2 bg-slate-100 shadow-md shadow-gray-700 cursor-pointer hover:scale-110 ease-in duration-200'> <BsPerson size={25}/>
             <span className="absolute bg-slate-100 left-16 rounded-md  opacity-0  p-2 transition-opacity duration-200 group-hover:opacity-100 pointer-events-none">
         Resume
-      </span></a>
-            <a href="#Contact" className='group border-1 flex justify-center items-center rounded-full lg:p-4 md:p-2 m-2 bg-slate-100 shadow-md shadow-gray-700 cursor-pointer hover:scale-110 ease-in duration-200'> <AiOutlineContacts size={25}/>
+      </span></Link>
+            <Link to="/Contact" className='group border-1 flex justify-center items-center rounded-full lg:p-4 md:p-2 m-2 bg-slate-100 shadow-md shadow-gray-700 cursor-pointer hover:scale-110 ease-in duration-200'> <AiOutlineContacts size={25}/>
             <span className="absolute bg-slate-100 left-16 rounded-md  opacity-0  p-2 transition-opacity duration-200 group-hover:opacity-100 pointer-events-none">
         Contact
-      </span></a>
+      </span></Link>
 
           </div>
         </div>
