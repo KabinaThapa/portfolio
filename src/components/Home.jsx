@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <div className="Home border flex justify-center items-center ">
       
-      <div className="mainBox flex flex-col max-w-full h-screen justify-between   pr-4 pt-12 pb-12 items-center md:ml-20 md:mr-20 md:flex-row">
-        <header className="introBox max-w-[600px] w-full ml-4 mr-4 flex flex-col  justify-center mt-12 items-center md:items-start md:mr-4 ">
+      <div className="mainBox  flex flex-col  h-screen justify-between   pr-4 pt-12 pb-12 items-center md:flex-row md:w-[70%] ">
+        <header className="introBox max-w-[600px] w-full ml-4 mr-4 flex flex-col  justify-center mt-12 items-center md:items-start md:mr-4  md:w-[40%]">
           <h1 className="text-4xl">Hi !</h1>
           <h1 className="font-bold lg:text-3xl text-[1.5rem] mb-2 pt-2 text-center ">I'm Kabina Thapa</h1>
           <h2 className=" lg:text-2xl text-[1rem] text-gray-600 text-center md:text-left md:flex">
@@ -49,8 +49,8 @@ const Home = () => {
             </a>
           </div>
         </header>
-      <div className=" max-w-[600px] w-full md:h-screen md:m-0 bg-slate-600 mt-2 md:mr-2 mb-8">
-        <img className="md:h-full" src={potrait}/>
+      <div className="  w-96 h-96 rounded-full bg-black bg-opacity-30  md:mr-2">
+       
       </div>
       
       </div>
