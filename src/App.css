@@ -2,19 +2,20 @@ body{
   background-image: url('https://cdn.dribbble.com/userupload/10297827/file/original-0f3a15d12f6275d041f7443e55ff28a1.jpeg?resize=752x');
   background-repeat: no-repeat;
   background-size: cover;
+ 
 }
 .glow {
     position: absolute;
-    width: 10rem;
-    height: 10rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 50%;
-  
-    background: radial-gradient( rgba(0, 128, 255, 0.894), transparent 100%);
+  z-index:2;
+    background: radial-gradient(rgba(255, 234, 0, 0.608)0%, transparent 120%);
     /* Radial gradient from the center (circle) with the glow color to transparent */
     transform: translate(-50%, -50%);
     pointer-events: none;
    
-    mix-blend-mode: overlay;
-    box-shadow: 0 0 8rem rgba(0, 128, 255, 0.894); /* Initial glow shadow */
+    mix-blend-mode:darken;
+    box-shadow: 0 0 10rem rgba(255, 234, 0, 0.608); /* Initial glow shadow */
   }
   

@@ -19,7 +19,7 @@ function MouseGlowEffect() {
   return (
    
       <div
-        className="glow border"
+        className="glow"
         style={{ left: `${position.x}px`, top: `${position.y}px` }}
       ></div>
    
