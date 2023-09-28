@@ -2,12 +2,13 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import potrait from '../images/Potrait.jpg'
-
+import MouseGlowEffect from "./MouseGlow";
+import '../main'
 
 const Home = () => {
   return (
     <div className="Home border flex justify-center items-center ">
-      
+     
       <div className="mainBox  flex flex-col  h-screen justify-between   pr-4 pt-12 pb-12 items-center md:flex-row md:w-[70%] ">
         <header className="introBox max-w-[600px] w-full ml-4 mr-4 flex flex-col  justify-center mt-12 items-center md:items-start md:mr-4  md:w-[40%]">
           <h1 className="text-4xl">Hi !</h1>
@@ -54,7 +55,9 @@ const Home = () => {
       </div>
       
       </div>
+      
     </div>
+     
   );
 };
 

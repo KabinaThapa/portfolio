@@ -1,0 +1,15 @@
+.glow {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+  
+    background: radial-gradient( rgba(0, 128, 255, 0.894), transparent 100%);
+    /* Radial gradient from the center (circle) with the glow color to transparent */
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+   
+    mix-blend-mode: overlay;
+    box-shadow: 0 0 8rem rgba(0, 128, 255, 0.894); /* Initial glow shadow */
+  }
+  
