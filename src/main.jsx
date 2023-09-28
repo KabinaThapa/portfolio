@@ -11,6 +11,9 @@ import Resume from './components/Resume.jsx'
 import Sidenav from './components/sidenav.jsx'
 import MouseGlowEffect from './components/MouseGlow'
 
+import ThreeScene from './components/three'
+
+
 const router=createBrowserRouter([
   {
   element:[<Sidenav/>, <MouseGlowEffect/>],
@@ -33,6 +36,10 @@ const router=createBrowserRouter([
     path:'Resume',
     element:<Resume/>
     },
+    {
+      path:'three',
+      element:<ThreeScene/>
+      },
   
   ],
 }

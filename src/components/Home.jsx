@@ -5,6 +5,8 @@ import potrait from '../images/Potrait.jpg'
 import MouseGlowEffect from "./MouseGlow";
 import '../main'
 
+
+
 const Home = () => {
   return (
     <div className="Home border flex justify-center items-center ">
@@ -55,6 +57,7 @@ const Home = () => {
       </div>
       
       </div>
+     
       
     </div>
      
