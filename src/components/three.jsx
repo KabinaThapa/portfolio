@@ -6,12 +6,12 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 const ThreeScene = () => {
   useEffect(() => {
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.set(0, 0, 5); // Adjust the position as needed
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
+    camera.position.set(0, 0, 20); // Adjust the position as needed
     camera.lookAt(0, 0, 0);
     const canvas = document.getElementById('canvas');
 
-    const renderer = new THREE.WebGLRenderer({ canvas });
+    const renderer = new THREE.WebGLRenderer({ canvas, alpha:true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
 
@@ -54,12 +54,13 @@ const ThreeScene = () => {
     controls.rotateSpeed = 0.5; //  rotation speed
     controls.minAzimuthAngle = -Math.PI / 8; // Minimum angle 
     controls.maxAzimuthAngle = Math.PI / 8; // Maximum angle 
+    controls.maxPolarAngle= Math.PI/2
+    controls.minPolarAngle= 0;
     controls.target.set(0, 0, 0);
 
-    const bg = new THREE.TextureLoader().load('https://cdn.dribbble.com/userupload/10297827/file/original-0f3a15d12f6275d041f7443e55ff28a1.jpeg?resize=752x');
-    scene.background = bg;
+   
 
-    camera.position.z = 5;
+    camera.position.z = 6;
 
     function animate() {
       requestAnimationFrame(animate);
@@ -98,7 +99,10 @@ const ThreeScene = () => {
 
   return (
     <>
-      <canvas id="canvas" className="" />
+    
+      <canvas id="canvas" className=" absolute top-2 left-52" />
+     
+     
     </>
   );
 };

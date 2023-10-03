@@ -4,12 +4,14 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import potrait from '../images/Potrait.jpg'
 import MouseGlowEffect from "./MouseGlow";
 import '../main'
+import Resume from "./Resume";
+import ThreeScene from "./three";
 
 
 
 const Home = () => {
   return (
-    <div className="Home border flex justify-center items-center ">
+    <div className="Home  flex justify-center items-center ">
      
       <div className="mainBox  flex flex-col  h-screen justify-between   pr-4 pt-12 pb-12 items-center md:flex-row md:w-[70%] ">
         <header className="introBox max-w-[600px] w-full ml-4 mr-4 flex flex-col  justify-center mt-12 items-center md:items-start md:mr-4  md:w-[40%]">
@@ -52,13 +54,13 @@ const Home = () => {
             </a>
           </div>
         </header>
-      <div className="  w-96 h-96 rounded-full bg-black bg-opacity-30  md:mr-2">
-       
-      </div>
-      
-      </div>
      
       
+      </div>
+      
+        <ThreeScene/>
+       
+     
     </div>
      
   );
