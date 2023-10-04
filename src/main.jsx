@@ -1,7 +1,7 @@
 import React from 'react'
 
 import ReactDOM from 'react-dom/client'
-import './App.css'
+
 import './index.css'
 import { createBrowserRouter, RouterProvider,Route } from 'react-router-dom'
 import Home from './components/Home.jsx'
@@ -12,42 +12,15 @@ import Sidenav from './components/sidenav.jsx'
 import MouseGlowEffect from './components/MouseGlow'
 
 import ThreeScene from './components/three'
+import App from './App.jsx'
 
 
-const router=createBrowserRouter([
-  {
-  element:[<Sidenav/>, <MouseGlowEffect/>],
-  children:[
-    {
-      path:'/',
-      element:<Home/>,
-      
-      
-    },
-    {
-      path:'/Contact',
-      element:<Contact/>
-    },
-    {
-      path:'/Projects',
-      element:<Project/>
-    },
-    {
-    path:'Resume',
-    element:<Resume/>
-    },
-    {
-      path:'three',
-      element:<ThreeScene/>
-      },
+
   
-  ],
-}
-])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     
-    <RouterProvider router={router}/>
+  <App/>
     
   </React.StrictMode>,
 )

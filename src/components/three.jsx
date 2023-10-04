@@ -2,16 +2,23 @@ import * as THREE from 'three';
 import React, { useEffect } from 'react';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import Home from './Home';
+import Resume from './Resume';
+import Project from './Project';
+import ParallaxScroll from './Parallax';
 
 const ThreeScene = () => {
   useEffect(() => {
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
-    camera.position.set(0, 0, 20); // Adjust the position as needed
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    
+    // Adjust the camera position to the right
+    camera.position.set(0, 0, 5);
     camera.lookAt(0, 0, 0);
+    
     const canvas = document.getElementById('canvas');
 
-    const renderer = new THREE.WebGLRenderer({ canvas, alpha:true });
+    const renderer = new THREE.WebGLRenderer({ canvas,alpha:true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
 
@@ -37,7 +44,7 @@ const ThreeScene = () => {
       model.position.sub(center);
 
       // Define the pivot offset based on your desired pivot point
-      const pivotOffsetX = 0; 
+      const pivotOffsetX = 0; // Adjust as needed to move the model to the end of the canvas
       const pivotOffsetY = 0; // Adjust as needed
       const pivotOffsetZ = 0; // Adjust as needed
       pivot.position.set(pivotOffsetX, pivotOffsetY, pivotOffsetZ);
@@ -52,42 +59,36 @@ const ThreeScene = () => {
     controls.enableDamping = true; // Enable camera damping for smoother rotation
     controls.dampingFactor = 0.05; // Adjust damping factor for smoother rotation
     controls.rotateSpeed = 0.5; //  rotation speed
-    controls.minAzimuthAngle = -Math.PI / 8; // Minimum angle 
+    controls.minAzimuthAngle = -Math.PI / 14; // Minimum angle 
     controls.maxAzimuthAngle = Math.PI / 8; // Maximum angle 
-    controls.maxPolarAngle= Math.PI/2
-    controls.minPolarAngle= 0;
-    controls.target.set(0, 0, 0);
-
-   
-
-    camera.position.z = 6;
+    controls.target.set(0, 0, 0); // Adjust target position
+    
+    camera.position.z = 5;
 
     function animate() {
       requestAnimationFrame(animate);
 
       if (model) {
-      
-       
          // Rotate the pivot object instead of the model
-    const pivot = model.parent;
-    const rotateSpeed = pivot.userData.rotateSpeed;
+        const pivot = model.parent;
+        const rotateSpeed = pivot.userData.rotateSpeed;
 
-    // Check if the pivot is within the angle range
-    if (pivot.userData.rotateDirection === 'left') {
-      // Rotate to the left until it reaches maxAzimuthAngle
-      if (pivot.rotation.y <= pivot.userData.maxAzimuthAngle) {
-        pivot.rotation.y += rotateSpeed;
-      } else {
-        pivot.userData.rotateDirection = 'right'; // Change direction to right
-      }
-    } else {
-      // Rotate to the right until it reaches minAzimuthAngle
-      if (pivot.rotation.y >= pivot.userData.minAzimuthAngle) {
-        pivot.rotation.y -= rotateSpeed;
-      } else {
-        pivot.userData.rotateDirection = 'left'; // Change direction to left
-      }
-    }
+        // Check if the pivot is within the angle range
+        if (pivot.userData.rotateDirection === 'left') {
+          // Rotate to the left until it reaches maxAzimuthAngle
+          if (pivot.rotation.y <= pivot.userData.maxAzimuthAngle) {
+            pivot.rotation.y += rotateSpeed;
+          } else {
+            pivot.userData.rotateDirection = 'right'; // Change direction to right
+          }
+        } else {
+          // Rotate to the right until it reaches minAzimuthAngle
+          if (pivot.rotation.y >= pivot.userData.minAzimuthAngle) {
+            pivot.rotation.y -= rotateSpeed;
+          } else {
+            pivot.userData.rotateDirection = 'left'; // Change direction to left
+          }
+        }
       }
 
       controls.update();
@@ -100,9 +101,21 @@ const ThreeScene = () => {
   return (
     <>
     
-      <canvas id="canvas" className=" absolute top-2 left-52" />
+      <canvas id="canvas" className='h-auto w-full' />
+      <ParallaxScroll>
+      <div className='absolute left-52 top-52 w-[40%]'>
+        <Home />
+      </div>
      
-     
+      
+      <div className='absolute w-full top-[100%]'>
+      <Resume/>
+      </div>
+      <div className='absolute w-full top-[200%]'>
+      <Project/>
+      
+      </div>
+      </ParallaxScroll>
     </>
   );
 };

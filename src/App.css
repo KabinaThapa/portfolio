@@ -1,10 +1,13 @@
 body{
+  overflow-x: hidden;
+}
+
+#canvas{
   background-image: url('https://cdn.dribbble.com/userupload/10297827/file/original-0f3a15d12f6275d041f7443e55ff28a1.jpeg?resize=752x');
   background-repeat: no-repeat;
-  background-size: cover;
-  overflow-x: hidden;
- 
+  background-size: cover; 
 }
+
 .glow {
     position: absolute;
     width: 20rem;
@@ -19,4 +22,4 @@ body{
     mix-blend-mode:darken;
     box-shadow: 0 0 10rem rgba(255, 234, 0, 0.608); /* Initial glow shadow */
   }
-  
+ 

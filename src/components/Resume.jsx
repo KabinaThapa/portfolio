@@ -1,9 +1,11 @@
 import React from 'react'
+import AnimatedBackground from './Parallax'
 
 
 const Resume = () => {
   return (
-    <div className='border p-2 flex flex-col justify-center items-center h-screen' id="Resume">
+    
+    <div className='  p-2 flex flex-col justify-center items-center h-screen w-full bg-white bg-opacity-50' id="Resume">
       <h1 className='text-3xl'>Resume</h1>
       <div className='border h-96 w-96'>
       <div className=''>Intro</div>
@@ -13,6 +15,7 @@ const Resume = () => {
       </div>
       
     </div>
+    
   )
 }
 

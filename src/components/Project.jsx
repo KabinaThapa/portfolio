@@ -1,9 +1,11 @@
 import React from 'react'
+import AnimatedBackground from './Parallax'
 
 
 const Project = () => {
   return (
-    <div className='border flex flex-col justify-center items-center p-4' id="Projects">
+    
+    <div className='flex flex-col justify-center items-center p-4' id="Projects">
       <h1 className='text-3xl'>Recent projects</h1>
       <div className='grid grid-cols-2 gap-12 border p-2'>
         <div className='border p-2 space-y-2'>
@@ -27,7 +29,9 @@ const Project = () => {
         </div>
       </div>
     </div>
+    
   )
+  
 }
 
 export default Project
