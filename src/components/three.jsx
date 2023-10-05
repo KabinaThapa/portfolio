@@ -103,9 +103,9 @@ const ThreeScene = () => {
     
       <canvas id="canvas" className='h-auto w-full' />
       <ParallaxScroll>
-      <div className='absolute left-52 top-52 w-[40%]'>
+     
         <Home />
-      </div>
+      
      
       
       <div className='absolute w-full top-[100%]'>

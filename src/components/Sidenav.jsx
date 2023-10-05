@@ -42,11 +42,11 @@ const Sidenav = () => {
             ''
           )
         }
-        <div className='md:block hidden bg-slate-400 '> 
-          <div className='flex flex-col fixed top-1/4 '>
+        <div className='md:block hidden bg-slate-400  '> 
+          <div className='flex flex-col fixed top-1/4 z-30'>
             <a href="/" className='relative group border-1 flex justify-center  items-center rounded-full lg:p-4 md:p-2 m-2 bg-slate-100 shadow-md shadow-gray-700 cursor-pointer hover:scale-110 ease-in duration-200'> 
             <AiOutlineHome size={25 } />
-            <span className="absolute bg-slate-100 left-16 rounded-md  opacity-0  p-2 transition-opacity duration-200 group-hover:opacity-100 pointer-events-none">
+            <span className="absolute bg-slate-700 left-16 rounded-md  opacity-0  p-2 transition-opacity duration-200 group-hover:opacity-100 pointer-events-none">
         Home
       </span>
             </a >
