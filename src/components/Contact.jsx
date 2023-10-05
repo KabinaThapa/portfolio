@@ -3,7 +3,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div id="Contact" className='w-full m-auto pl-4 pr-4 bg-slate-400 h-screen  md:pl-16 md:pr-16'>
+    <div id="Contact" className='w-full m-auto pl-4 pr-4 bg-slate-400   md:pl-16 md:pr-16'>
       
       <h1 className='text-center text-[3rem] font-semibold mb-8'>Contact Me</h1>
       <form action='https://formspree.io/f/mrgvnoqb' method='POST' encType='multiple/form-data'>

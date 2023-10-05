@@ -108,13 +108,13 @@ const ThreeScene = () => {
       
      
       
-      <div className='absolute w-full top-[100%]'>
+      
       <Resume/>
-      </div>
-      <div className='absolute w-full top-[200%]'>
+      
+     
       <Project/>
       
-      </div>
+      
       </ParallaxScroll>
     </>
   );

@@ -1,49 +1,48 @@
-import React from 'react'
-import Resume from './Resume'
-import { Parallax,ParallaxLayer } from '@react-spring/parallax'
-import Project from './Project'
-import Contact from './Contact'
-import ThreeScene from './three'
-import Home from './Home'
-import{HiOutlineClipboardDocumentList} from 'react-icons/hi2'
-const ParallaxScroll = () => {
-  return (
-    <Parallax pages={4}>
-      <ParallaxLayer 
-        offset={0.2}
-        speed={0.05}
-        
-        style={{position:'absolute', top:'1rem', left:'12rem'}}>
-          
-          <Home/>
-           
-        </ParallaxLayer>
-        
-        
-      
-        <ParallaxLayer 
-        offset={1}
-        speed={1}
-        factor={0} >
-          <Resume/>
-            
-        </ParallaxLayer>
-        <ParallaxLayer 
-        offset={2}
-        speed={2.5}
-        factor={2}>
-          <Project/>
-            
-        </ParallaxLayer>
-        <ParallaxLayer 
-        offset={3}
-        speed={2.5}
-        >
-          <Contact/>
-            
-        </ParallaxLayer>
-    </Parallax>
-  )
-}
+import React, { useRef, useState } from 'react';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import Resume from './Resume';
+import Project from './Project';
+import Contact from './Contact';
+import Home from './Home';
+import {AiOutlineHome, AiOutlineMenu, AiOutlineProject, AiOutlineContacts} from 'react-icons/ai'
+import {BsPerson} from 'react-icons/bs'
+import Sidenav from './sidenav';
 
-export default ParallaxScroll
+const ParallaxScroll = () => {
+ 
+  const parallaxRef = useRef(null);
+
+  // Function to scroll to a specific offset
+  const scrollToOffset = (offset) => {
+    if (parallaxRef.current) {
+      parallaxRef.current.scrollTo(offset);
+    }
+  };
+
+  return (
+    <>
+   <Sidenav scrollToOffset={scrollToOffset}/>
+  
+    <div>
+     
+
+      <Parallax ref={parallaxRef} pages={5}>
+        <ParallaxLayer offset={0} speed={1} style={{position:'absolute', left:'15rem', top:'14rem'}}>
+          <Home />
+        </ParallaxLayer>
+        <ParallaxLayer offset={1} speed={1}>
+          <Project />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2} speed={1}>
+          <Resume />
+        </ParallaxLayer>
+        <ParallaxLayer offset={4} speed={1}>
+          <Contact />
+        </ParallaxLayer>
+      </Parallax>
+    </div>
+    </>
+  );
+};
+
+export default ParallaxScroll;

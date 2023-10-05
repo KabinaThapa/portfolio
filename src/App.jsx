@@ -17,7 +17,7 @@ function App ()  {
     
     <div className='App flex flex-col w-full h-auto '>
         <MouseGlowEffect/>
-   <Sidenav/>
+  <Sidenav/>
    
    <ThreeScene/>
     </div>
