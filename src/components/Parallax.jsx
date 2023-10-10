@@ -26,7 +26,7 @@ const ParallaxScroll = () => {
     <div>
      
 
-      <Parallax ref={parallaxRef} pages={5}>
+      <Parallax ref={parallaxRef} pages={5} className='w-full'>
         <ParallaxLayer offset={0} speed={1} style={{position:'absolute', left:'15rem', top:'14rem'}}>
           <Home />
         </ParallaxLayer>

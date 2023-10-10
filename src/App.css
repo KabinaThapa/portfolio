@@ -1,19 +1,22 @@
-html{
+html, body{
+ width:100%;
+  
   scroll-behavior: smooth;
+  overflow: hidden;
+  
 }
-body{
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
+
 
 #canvas{
   background-image: url('https://cdn.dribbble.com/userupload/10297827/file/original-0f3a15d12f6275d041f7443e55ff28a1.jpeg?resize=752x');
   background-repeat: no-repeat;
   background-size: cover; 
+  overflow-x: hidden;
 }
 
 .glow {
-    position: absolute;
+  
+    position:fixed;
     width: 20rem;
     height: 20rem;
     border-radius: 50%;

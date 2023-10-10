@@ -11,7 +11,7 @@ import ThreeScene from "./three";
 
 const Home = () => {
   return (
-    <div className=" flex justify-center  w-[30%]  p-2  " id="Home">
+    <div className=" flex justify-center  w-[30%] -z-10 p-2 " id="Home">
      
       <div className="mainBox  flex flex-col  justify-between w-full ">
         <header className="introBox  w-full ml-4 mr-4 flex flex-col  justify-center mt-12 items-center md:items-start md:mr-4">

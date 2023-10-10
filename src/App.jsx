@@ -15,7 +15,7 @@ function App ()  {
   return (
     <>
     
-    <div className='App flex flex-col w-full h-auto '>
+    <div className='App flex flex-col h-auto '>
         <MouseGlowEffect/>
   <Sidenav/>
    

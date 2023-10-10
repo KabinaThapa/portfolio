@@ -21,7 +21,14 @@ const ThreeScene = () => {
     const renderer = new THREE.WebGLRenderer({ canvas,alpha:true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
+//add eventlistener
+    window.addEventListener('resize',()=>{
+  renderer.setSize(window.innerWidth, window.innerHeight)
+  camera.aspect=window.innerWidth/window.innerHeight
+  camera.updateProjectionMatrix()
+  camera.position.set(0,0,8)
 
+})
     // Add a directional light to the scene
     const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
     directionalLight.position.set(10, 10, 10);
