@@ -11,12 +11,12 @@ import ThreeScene from "./three";
 
 const Home = () => {
   return (
-    <div className=" flex justify-center  w-[30%] -z-10 p-2 " id="Home">
+    <div className=" flex flex-col justify-center p-2  md:w-[24%] w-[75%] border md:absolute md:top-[14rem] md:left-[12rem] absolute top-[20rem] left-10 " id="Home">
      
-      <div className="mainBox  flex flex-col  justify-between w-full ">
+      <div className="mainBox  flex   justify-center w-full border ">
         <header className="introBox  w-full ml-4 mr-4 flex flex-col  justify-center mt-12 items-center md:items-start md:mr-4">
-          <h1 className="text-4xl">Hi !</h1>
-          <h1 className="font-bold lg:text-3xl text-[1.5rem] mb-2 pt-2 text-center ">I'm Kabina Thapa</h1>
+          <h1 className="md:text-4xl text-lg">Hi !</h1>
+          <h1 className="font-bold lg:text-3xl  mb-2 pt-2 text-center ">I'm Kabina Thapa</h1>
           <h2 className=" lg:text-2xl text-[1rem] text-gray-600 text-center md:text-left md:flex">
             {" "}
             I'm
@@ -39,27 +39,27 @@ const Home = () => {
               cursor={true}
             />
           </h2>
-          <div className="logos flex justify-between max-w-[250px] w-full mt-2  p-1 ">
-            <a className="pr-3">
-              <FaTwitter size={25} />
-            </a>
-            <a className="pr-3">
-              <FaFacebook size={25} />
-            </a>
-            <a className="pr-3">
-              <FaInstagram size={25} />
-            </a>
-            <a className="pr-3">
-              <FaLinkedin size={25} />
-            </a>
-          </div>
+         
         </header>
     
       
       </div>
      
        
-       
+      <div className="logos flex justify-between md:max-w-[250px] w-full mt-2  p-1 border">
+            <a className="">
+              <FaTwitter size={25} />
+            </a>
+            <a className="">
+              <FaFacebook size={25} />
+            </a>
+            <a className="">
+              <FaInstagram size={25} />
+            </a>
+            <a className="">
+              <FaLinkedin size={25} />
+            </a>
+          </div>
      
     </div>
      
