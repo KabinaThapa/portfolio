@@ -1,9 +1,11 @@
 html, body{
- width:100%;
-  
+ width: 100%;
+  padding: 0;
+  margin: 0;
   scroll-behavior: smooth;
+ 
   overflow: hidden;
-  
+ 
 }
 
 
@@ -11,7 +13,8 @@ html, body{
   background-image: url('https://cdn.dribbble.com/userupload/10297827/file/original-0f3a15d12f6275d041f7443e55ff28a1.jpeg?resize=752x');
   background-repeat: no-repeat;
   background-size: cover; 
-  overflow-x: hidden;
+  width: 100%;
+  
 }
 
 .glow {

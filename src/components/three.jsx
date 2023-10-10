@@ -26,7 +26,7 @@ const ThreeScene = () => {
   renderer.setSize(window.innerWidth, window.innerHeight)
   camera.aspect=window.innerWidth/window.innerHeight
   camera.updateProjectionMatrix()
-  camera.position.set(0,0,8)
+  camera.position.set(0,0,7)
 
 })
     // Add a directional light to the scene
@@ -108,7 +108,7 @@ const ThreeScene = () => {
   return (
     <>
     
-      <canvas id="canvas" className='h-auto w-full' />
+      <canvas id="canvas" style={{minWidth:'320px'}} />
       <ParallaxScroll>
      
         <Home />

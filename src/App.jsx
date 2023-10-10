@@ -15,12 +15,12 @@ function App ()  {
   return (
     <>
     
-    <div className='App flex flex-col h-auto '>
+    
         <MouseGlowEffect/>
   <Sidenav/>
    
    <ThreeScene/>
-    </div>
+    
     
  
     
