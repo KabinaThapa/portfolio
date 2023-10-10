@@ -29,7 +29,7 @@ const Sidenav = ({scrollToOffset}) => {
             <BsPerson size={20}/>
             <span className='pl-2'> Resume</span>
           </button>
-          <button onClick={() => scrollToOffset(4)} className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-300 cursor-pointer hover:scale-110 ease-in duration-200">
+          <button onClick={() => scrollToOffset(4.5)} className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-300 cursor-pointer hover:scale-110 ease-in duration-200">
             <AiOutlineContacts size={20}/>
             <span className='pl-2'>Contact</span>
           </button>
