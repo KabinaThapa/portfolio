@@ -16,11 +16,11 @@ const Home = () => {
     <h1 className="md:hidden text-2xl absolute top-[7rem] left-[50%] transform translate-x-[-50%]"> Hi !</h1>
     </div>
     
-    <div className=" flex flex-col justify-center items-center p-2 bg-white bg-opacity-25 md:w-[24%] w-[75%] md:absolute md:top-[14rem] md:left-[12rem] fixed top-[20rem] left-[50%] transform translate-x-[-50%] " id="Home">
+    <div className=" flex flex-col justify-center items-center p-2 bg-white bg-opacity-25 md:bg-transparent md:w-[24%] w-[75%] md:absolute md:top-[15rem] md:left-[22rem] fixed top-[20rem] left-[50%] transform translate-x-[-50%] " id="Home">
      
       <div className="mainBox  flex   justify-center w-full ">
         <header className="introBox  w-full ml-4 mr-4 flex flex-col  justify-center mt-12 items-center md:items-start md:mr-4">
-          <h1 className="md:text-4xl hidden">Hi !</h1>
+          <h1 className="md:text-4xl hidden md:block">Hi !</h1>
           <h1 className="font-bold lg:text-3xl  mb-2 pt-2 text-center ">I'm Kabina Thapa</h1>
           <h2 className=" lg:text-2xl text-[1rem] text-gray-600 text-center md:text-left md:flex">
             {" "}
