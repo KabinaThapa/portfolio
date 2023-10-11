@@ -12,15 +12,13 @@ import ThreeScene from "./three";
 const Home = () => {
   return (
     <>
-    <div className="w-full md:hidden">
-    <h1 className="md:hidden text-2xl absolute top-[7rem] left-[50%] transform translate-x-[-50%]"> Hi !</h1>
-    </div>
+   
     
-    <div className=" flex flex-col justify-center items-center p-2 bg-white bg-opacity-25 md:bg-transparent md:w-[24%] w-[75%] md:absolute md:top-[15rem] md:left-[22rem] fixed top-[20rem] left-[50%] transform translate-x-[-50%] " id="Home">
+    <div className=" flex flex-col justify-center  space-y-6  p-2 bg-white bg-opacity-25 md:bg-transparent md:w-[28%]  w-[75%] md:absolute md:top-[12rem] md:left-[24rem] fixed top-[20rem] left-[50%] transform translate-x-[-50%] " id="Home">
      
       <div className="mainBox  flex   justify-center w-full ">
-        <header className="introBox  w-full ml-4 mr-4 flex flex-col  justify-center mt-12 items-center md:items-start md:mr-4">
-          <h1 className="md:text-4xl hidden md:block">Hi !</h1>
+        <header className="introBox  w-full  flex flex-col  justify-center mt-12 items-center md:items-start ">
+          <h1 className="md:text-4xl text-2xl">Hi !</h1>
           <h1 className="font-bold lg:text-3xl  mb-2 pt-2 text-center ">I'm Kabina Thapa</h1>
           <h2 className=" lg:text-2xl text-[1rem] text-gray-600 text-center md:text-left md:flex">
             {" "}
@@ -28,13 +26,13 @@ const Home = () => {
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
-                "a Developer",
+                "a Web Developer",
                 1000, // wait 1s before replacing "Mice" with "Hamsters"
-                "a UI/UX Designer",
+                "passionate about Front-End",
                 1000,
-                "an Artist",
+                "learning React and Javascript",
                 1000,
-                "a Tech Enthusiast",
+                "also an Artist",
                 1000,
               ]}
               wrapper="div"
@@ -51,7 +49,7 @@ const Home = () => {
       </div>
      
        
-      <div className="logos flex justify-between  w-[80%] mt-2  p-1 ">
+      <div className="logos flex justify-between md:w-[50%] w-[80%]  ">
             <a className="">
               <FaTwitter size={25} />
             </a>

@@ -39,6 +39,8 @@ const ThreeScene = () => {
     let model;
     loader.load('./src/images/Girl.gltf', (gltf) => {
       model = gltf.scene;
+      
+      
 
       // Create a pivot object and add the model to it
       const pivot = new THREE.Object3D();

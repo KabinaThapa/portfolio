@@ -11,13 +11,13 @@ const Resume = () => {
         <div className=''>
           <h1 className='md:text-2xl  '>Kabina Thapa</h1>
           <h2 className='md:text-xl text-sm'>Entry Level Front End Developer</h2>
-          <h2 className='text-xs'>Thapakabina28@gmail.com | 929-257-4577 | Jamaica, New York 11416</h2>
-         <p className='text-xs'>LinkedIn: <a className='underline text-blue-700' href='https://www.linkedin.com/in/kabina-thapa'>www.linkedin.com/in/kabina-thapa</a> | Git:<a className='underline text-blue-700' href=' https://github.com/KabinaThapa'> https://github.com/KabinaThapa</a>
+          <h2 className='text-xs md:text-lg'>Thapakabina28@gmail.com | 929-257-4577 | Jamaica, New York 11416</h2>
+         <p className='text-xs md:text-lg'>LinkedIn: <a className='underline text-blue-700' href='https://www.linkedin.com/in/kabina-thapa'>www.linkedin.com/in/kabina-thapa</a> | Git:<a className='underline text-blue-700' href=' https://github.com/KabinaThapa'> https://github.com/KabinaThapa</a>
          </p>
              
           
         </div>
-      <div className='md:text-lg text-[0.80rem]'>
+      <div className='md:text-lg text-xs'>
         <p>As a passionate and self-motivated aspiring front-end developer, 
         I am dedicated to continuously expanding my knowledge and skills in web development. 
         Eager to embark on a career in front-end development, I have been actively learning 
@@ -27,7 +27,7 @@ const Resume = () => {
          </div>
       <div className=''>
         <h1 className='md:text-2xl'>Technical Skills</h1>
-        <div className='grid grid-cols-2 gap-2 md:text-lg text-[0.80rem]'>
+        <div className='grid grid-cols-2 gap-2 md:text-lg text-xs'>
           <h1 className=''>Programming Languages:</h1>
           <h1>JavaScript (Intermediate), HTML (Intermediate), CSS (Intermediate), TypeScript (Basic)</h1>
           <h1 className=''>Front End Frameworks/Libraries:</h1>
@@ -57,16 +57,16 @@ const Resume = () => {
         <div className='space-y-2'>
           <div>
         <h1 className='md:text-xl text-sm'>Description:</h1>
-        <p className='md:text-lg text-[0.80rem]'>Developed a visually appealing and user-friendly e-commerce website called "Glamedge" with a primary focus on front-end development. Integrated a
+        <p className='md:text-lg text-xs'>Developed a visually appealing and user-friendly e-commerce website called "Glamedge" with a primary focus on front-end development. Integrated a
            basic payment page using Stripe for secure transactions and implemented user authentication with Next Auth for seamless login and registration.</p>
            </div>
-          <div className='text-[0.80rem]'>
+          <div className='text-xs md:text-lg'>
            <h1 className='md:text-xl text-sm'>Technical Details:</h1>
            <h2>Front-End Technologies: Next.js, React-Redux Toolkit, Tailwind CSS</h2>
             <h2>Payment Integration: Stripe</h2>
             <h2>User Authentication: Next Auth</h2>
             </div>
-            <div className='text-[0.80rem]'>
+            <div className='text-xs md:text-lg'>
             <h1 className='md:text-xl text-sm'>Features</h1>
             <h2>Implemented category-based product listings and a shopping cart functionality.</h2>
             <h2>Designed and created a custom database using a db.json file to manage product data.</h2>
@@ -76,14 +76,14 @@ const Resume = () => {
             <h1 className='md:text-xl text-sm'>Project Link:</h1>
             </div>
             </div>
-            <div className='border space-y-2 text-[0.80rem]'>
+            <div className='border space-y-2 text-xs md:text-lg'>
               <h1 className='md:text-xl text-sm'>Weather App</h1>
               <div>
               <h1 className='md:text-xl text-sm'>Description:</h1>
-              <p className='md:text-lg text-[0.80rem]'>Developed a dynamic weather application using React, JavaScript, and Tailwind CSS. Utilized the OpenWeather API to provide real-time weather forecasts, including current conditions and 3-hour forecasts for 5 days.
+              <p className='md:text-lg text-xs'>Developed a dynamic weather application using React, JavaScript, and Tailwind CSS. Utilized the OpenWeather API to provide real-time weather forecasts, including current conditions and 3-hour forecasts for 5 days.
                  Implemented SVG images and animations to visualize weather conditions and utilized Dayjs to convert timestamps into readable time.</p>
                  </div>
-                 <div>
+                 <div >
                  <h1 className='md:text-xl text-sm'>Technical Details:</h1>
                  <h2>Front-End Technologies: React,Javascript, Tailwind CSS</h2>
             <h2>API Integration: OpenWeather API</h2>
@@ -103,7 +103,7 @@ const Resume = () => {
         </div>
       <div className=''>
         <h1 className='md:text-2xl'>Education</h1>
-        <div className='text-[0.80rem] grid grid-cols-2 gap-2'>
+        <div className='text-xs md:text-lg grid grid-cols-2 gap-2'>
           <h1>Queens College/CUNY</h1>
           <h1>Flushing, NY</h1>
           <h2>Bachelors of Arts in Computer Science</h2>
