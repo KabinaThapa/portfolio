@@ -5,7 +5,7 @@ import AnimatedBackground from './Parallax'
 const Resume = () => {
   return (
     
-    <div className='p-[2%] flex flex-col justify-center items-center w-full bg-white bg-opacity-50' id="Resume">
+    <div className='p-[2%] flex flex-col justify-center items-center w-full bg-black bg-opacity-50 text-slate-200' id="Resume">
       <h1 className='md:text-3xl text-xl'>Resume</h1>
       <div className='border md:w-[85%] w-[95%] p-[2%] space-y-4'>
         <div className=''>

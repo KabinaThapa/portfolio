@@ -15,19 +15,20 @@ html, body{
   
 }
 
+
 .glow {
   
     position:fixed;
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
     border-radius: 50%;
   z-index:2;
-    background: radial-gradient(rgba(244, 113, 5, 0.848)0%, transparent 120%);
+    background: radial-gradient(rgba(248, 246, 245, 0.080)0%, transparent 120%);
     /* Radial gradient from the center (circle) with the glow color to transparent */
     transform: translate(-50%, -50%);
     pointer-events: none;
    
-    mix-blend-mode:darken;
-    box-shadow: 0 0 10rem rgba(244, 113, 5, 0.837); /* Initial glow shadow */
+    mix-blend-mode:normal;
+    box-shadow: 0 0 10rem rgba(248, 246, 245, 0.080); /* Initial glow shadow */
   }
  

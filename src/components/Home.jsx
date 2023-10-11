@@ -14,13 +14,13 @@ const Home = () => {
     <>
    
     
-    <div className=" flex flex-col justify-center  space-y-6  p-2 bg-white bg-opacity-25 md:bg-transparent md:w-[28%]  w-[75%] md:absolute md:top-[12rem] md:left-[24rem] fixed top-[20rem] left-[50%] transform translate-x-[-50%] " id="Home">
+    <div className=" flex flex-col justify-center   space-y-6  p-2 bg-black bg-opacity-50 md:bg-transparent md:w-[28%]  w-full md:absolute md:top-[12rem] md:left-[24rem] fixed top-[20rem] left-[50%] transform translate-x-[-50%] " id="Home">
      
       <div className="mainBox  flex   justify-center w-full ">
-        <header className="introBox  w-full  flex flex-col  justify-center mt-12 items-center md:items-start ">
-          <h1 className="md:text-4xl text-2xl">Hi !</h1>
-          <h1 className="font-bold lg:text-3xl  mb-2 pt-2 text-center ">I'm Kabina Thapa</h1>
-          <h2 className=" lg:text-2xl text-[1rem] text-gray-600 text-center md:text-left md:flex">
+        <header className="introBox  w-full  flex flex-col items-center md:items-start ">
+          <h1 className="md:text-4xl text-2xl text-white">Hi !</h1>
+          <h1 className="font-bold lg:text-3xl  mb-2 pt-2 text-center text-white ">I'm Kabina Thapa</h1>
+          <h2 className=" lg:text-2xl text-[1rem] text-gray-500 text-center md:text-left md:flex">
             {" "}
             I'm
             <TypeAnimation
@@ -49,18 +49,18 @@ const Home = () => {
       </div>
      
        
-      <div className="logos flex justify-between md:w-[50%] w-[80%]  ">
+      <div className="logos flex justify-between mx-auto w-[50%] md:mx-0 text-slate-100 ">
             <a className="">
               <FaTwitter size={25} />
             </a>
             <a className="">
-              <FaFacebook size={25} />
+              <FaFacebook size={25}  />
             </a>
             <a className="">
-              <FaInstagram size={25} />
+              <FaInstagram size={25}  />
             </a>
             <a className="">
-              <FaLinkedin size={25} />
+              <FaLinkedin size={25}  />
             </a>
           </div>
      
