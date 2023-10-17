@@ -19,8 +19,8 @@ const Home = () => {
       <div className="mainBox  flex   justify-center w-full ">
         <header className="introBox  w-full  flex flex-col items-center md:items-start ">
           <h1 className="md:text-4xl text-2xl text-white">Hi !</h1>
-          <h1 className="font-bold lg:text-3xl  mb-2 pt-2 text-center text-white ">I'm Kabina Thapa</h1>
-          <h2 className=" lg:text-2xl text-[1rem] text-gray-500 text-center md:text-left md:flex">
+          <h1 className="font-semibold lg:text-3xl  text-xl  mb-2 pt-2 text-center text-white ">I'm Kabina Thapa</h1>
+          <h2 className=" lg:text-2xl text-[1rem] text-gray-400 text-center md:text-left md:flex">
             {" "}
             I'm
             <TypeAnimation
