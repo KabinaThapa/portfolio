@@ -1,5 +1,6 @@
 import React from 'react'
-import AnimatedBackground from './Parallax'
+import Glamedge from '../assets/glamedge.png'
+import Weather from '../assets/weather.png'
 
 
 const Project = () => {
@@ -11,7 +12,7 @@ const Project = () => {
         <div className='p-2 space-y-2 text-center'>
           <h1 className='md:text-2xl text-lg text-white'>GlamEdge Ecommerce App</h1>
           <div className='w-full md:h-80   border-black' >
-            <img className='object-contain w-full h-full' src={'/src/images/glamedge.png'}/>
+            <img className='object-contain w-full h-full' src={Glamedge}/>
           </div>
           <div className='md:w-[80%] w-[90%] flex mx-auto justify-evenly'>
           <a href='https://github.com/KabinaThapa/GlamEdge' className=' rounded text-center bg-zinc-200 p-1 md:w-32 w-24'>Github</a>
@@ -24,7 +25,7 @@ const Project = () => {
           <h1 className='md:text-2xl text-xl text-white'>Weather App</h1>
          
           <div className='w-full md:h-80   border-black' >
-            <img className='object-contain w-full h-full' src={'/src/images/weather.png'}/>
+            <img className='object-contain w-full h-full' src={Weather}/>
           </div>
           <div className='md:w-[80%] w-[90%] mx-auto flex justify-evenly'>
           <a href='https://github.com/KabinaThapa/weather-app' className=' rounded text-center bg-zinc-200 p-1 md:w-32 w-24'>Github</a>

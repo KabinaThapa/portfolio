@@ -7,6 +7,8 @@ import Resume from './Resume';
 import Project from './Project';
 import ParallaxScroll from './Parallax';
 
+
+
 const ThreeScene = () => {
   useEffect(() => {
     const scene = new THREE.Scene();
@@ -37,7 +39,7 @@ const ThreeScene = () => {
     const loader = new GLTFLoader();
 
     let model;
-    loader.load('./src/images/Girl.gltf', (gltf) => {
+    loader.load('/src/images/Girl.gltf', (gltf) => {
       model = gltf.scene;
       
       
