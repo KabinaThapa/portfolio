@@ -11,25 +11,24 @@ const Sidenav = ({scrollToOffset}) => {
   return (
     
     <div>
-    <AiOutlineMenu size={22}
-    onClick={handleNav} className='absolute top-4 right-4  md:hidden z-[60] text-white' />
+    {nav ? (<h1 onClick={handleNav} className='absolute top-4 left-4  md:hidden z-[60] text-white text-xl' >X</h1>):( <AiOutlineMenu onClick={handleNav} className='absolute top-4 left-4 z-50 text-xl  md:hidden  text-white' />)}
     {
       nav ? (
-        <div className= 'div fixed w-full h-screen flex-col flex justify-center items-center md:mr-4 border z-50 bg-white bg-opacity-80'>
-          <button onClick={() => scrollToOffset(0)} className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-300 cursor-pointer hover:scale-110 ease-in duration-200">
+        <div className= 'div fixed w-[50%] mx-auto h-screen flex-col flex justify-center items-center md:mr-4  z-50  backdrop-blur-lg'>
+          <button onClick={() => scrollToOffset(0)} className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-700 cursor-pointer hover:scale-110 ease-in duration-200">
          
             <AiOutlineHome size={20}/>
             <span className='pl-2 '> Home</span>
           </button>
-          <button onClick={() => scrollToOffset(1)} className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-500 cursor-pointer hover:scale-110 ease-in duration-200">
+          <button onClick={() => scrollToOffset(1)} className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-700 cursor-pointer hover:scale-110 ease-in duration-200">
             <AiOutlineProject size={20}/>
             <span className='pl-2'> Projects</span>
           </button>
-          <button onClick={() => scrollToOffset(2)} className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-300 cursor-pointer hover:scale-110 ease-in duration-200">
+          <button onClick={() => scrollToOffset(2)} className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-700 cursor-pointer hover:scale-110 ease-in duration-200">
             <BsPerson size={20}/>
             <span className='pl-2'> Resume</span>
           </button>
-          <button onClick={() => scrollToOffset(4)} className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-300 cursor-pointer hover:scale-110 ease-in duration-200">
+          <button onClick={() => scrollToOffset(4)} className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-700 cursor-pointer hover:scale-110 ease-in duration-200">
             <AiOutlineContacts size={20}/>
             <span className='pl-2'>Contact</span>
           </button>
@@ -44,7 +43,7 @@ const Sidenav = ({scrollToOffset}) => {
       <div className='flex flex-col fixed top-1/4 z-30'>
         <button onClick={() => scrollToOffset(0)} className='relative group border-1 flex justify-center  items-center rounded-full lg:p-4 md:p-2 m-2 bg-slate-100 shadow-md shadow-gray-700 cursor-pointer hover:scale-110 ease-in duration-200'> 
         <AiOutlineHome size={25 } />
-        <span className="absolute bg-slate-700 left-16 rounded-md  opacity-0  p-2 transition-opacity duration-200 group-hover:opacity-100 pointer-events-none">
+        <span className="absolute bg-slate-100 left-16 rounded-md  opacity-0  p-2 transition-opacity duration-200 group-hover:opacity-100 pointer-events-none">
     Home
   </span>
         </button >

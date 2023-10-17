@@ -1,19 +1,30 @@
 import React from 'react'
 
-
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 const Contact = () => {
+  const emailAddress='thapakabina28@gmail.com'
   return (
-    <div id="Contact" className='w-full m-auto pl-4 pr-4 bg-black bg-opacity-50 h-screen text-slate-200  md:pl-16 md:pr-16'>
+    <>
+    <div id="Contact" className='w-full  flex flex-col mx-auto  pl-4 pr-4 bg-black bg-opacity-50 h-screen text-slate-200  md:pl-16 md:pr-16'>
+    <h1 className='text-center md:text-4xl font-semibold mt-10'>Contact</h1>
+      <div className='flex flex-col items-center justify-center w-full h-full md:text-2xl gap-4'>
       
-      <h1 className='text-center text-[3rem] font-semibold mb-8'>Contact</h1>
       <h2>Get in touch with me via social media</h2>
-      <div>Icons</div>
-      <h1>Or</h1>
-      <h2>Directly email me</h2>
-      <h2>thapakabina28@gmail.com</h2>
-     
+      <div className="logos flex justify-evenly mx-auto md:w-38  w-20 md:mx-0 text-slate-100 ">
+           
+            <a href=' https://github.com/KabinaThapa' className="">
+              <FaGithub size={25}  />
+            </a>
+            <a href='https://www.linkedin.com/in/kabina-thapa' className="">
+              <FaLinkedin size={25}  />
+            </a>
+          </div>
+      <h1>OR</h1>
+      <a href={`mailto:${emailAddress}`}>Directly Email me at {emailAddress} </a>
+      </div>
        
     </div>
+    </>
   )
 }
 

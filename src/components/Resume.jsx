@@ -1,13 +1,13 @@
 import React from 'react'
-import AnimatedBackground from './Parallax'
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 
 const Resume = () => {
   return (
     
-    <div className='p-[2%] flex flex-col justify-center items-center w-full bg-black bg-opacity-50 text-slate-200' id="Resume">
-      <h1 className='md:text-3xl text-xl'>Resume</h1>
-      <div className='border md:w-[85%] w-[95%] p-[2%] space-y-4'>
+    <div className='p-[2%] flex flex-col justify-center items-center w-full bg-black bg-opacity-50 text-slate-200 font-sans' id="Resume">
+      <h1 className='md:text-3xl text-xl mt-10'>Resume</h1>
+      <div className=' md:w-[85%] w-[95%] p-[2%] space-y-4'>
         <div className=''>
           <h1 className='md:text-2xl  '>Kabina Thapa</h1>
           <h2 className='md:text-xl text-sm'>Entry Level Front End Developer</h2>
@@ -50,7 +50,7 @@ const Resume = () => {
       </div>
       <div className='space-y-4 '>
         
-        <div className='space-y-2 border-2'>
+        <div className='space-y-2'>
         <h1 className='md:text-2xl'>Projects</h1>
         <h1 className='md:text-2xl text-sm'>GlamEdge E-commerce Fashion website</h1>
        
@@ -73,10 +73,10 @@ const Resume = () => {
             <h2>Enabled secure payment processing through Stripe for seamless transactions.</h2>
             <h2>Implemented user authentication and registration using Next Auth.</h2>
             </div>
-            <h1 className='md:text-xl text-sm'>Project Link:</h1>
+            <div className='md:text-xl text-sm'>Project Link: <a href='https://glam-edge.vercel.app/' className='text-sm underline text-blue-700'>https://glam-edge.vercel.app/</a></div>
             </div>
             </div>
-            <div className='border space-y-2 text-xs md:text-lg'>
+            <div className=' space-y-2 text-xs md:text-lg'>
               <h1 className='md:text-xl text-sm'>Weather App</h1>
               <div>
               <h1 className='md:text-xl text-sm'>Description:</h1>
@@ -96,7 +96,9 @@ const Resume = () => {
                  <h2>Visual representation of weather conditions using SVG images and animations.</h2>
                  <h2>Conversion of timestamps into human-readable time formats for enhanced user experience.</h2>
                  </div>
-                 <h1 className='md:text-xl text-sm'>Project Link:</h1>
+                 <div className='md:text-xl text-sm text-white'>
+                  Project Link:  <a href='https://weather-app-kabinathapa.vercel.app/' className='underline text-blue-700'> https://weather-app-kabinathapa.vercel.app/</a>
+                 </div>
             </div>
            
 

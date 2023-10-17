@@ -14,7 +14,7 @@ const Home = () => {
     <>
    
     
-    <div className=" flex flex-col justify-center   space-y-6  p-2 bg-black bg-opacity-50 md:bg-transparent md:w-[28%]  w-full md:absolute md:top-[12rem] md:left-[24rem] fixed top-[20rem] left-[50%] transform translate-x-[-50%] " id="Home">
+    <div className=" flex flex-col justify-center   space-y-6  p-2 bg-black bg-opacity-50 md:bg-transparent md:w-[28%]  w-full md:absolute md:top-[16rem] md:left-[24rem] fixed top-[20rem] left-[50%] transform translate-x-[-50%] " id="Home">
      
       <div className="mainBox  flex   justify-center w-full ">
         <header className="introBox  w-full  flex flex-col items-center md:items-start ">
@@ -32,7 +32,7 @@ const Home = () => {
                 1000,
                 "learning React and Javascript",
                 1000,
-                "also an Artist",
+                "an Artist",
                 1000,
               ]}
               wrapper="div"
