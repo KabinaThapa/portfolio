@@ -1,7 +1,7 @@
 import React from 'react'
 
 import MouseGlowEffect from './components/MouseGlow'
-import Sidenav from './components/sidenav'
+import Sidenav from './components/Sidenav'
 import ThreeScene from './components/three'
 
 import './App.css'
