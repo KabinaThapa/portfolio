@@ -1,11 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-import potrait from '../images/Potrait.jpg'
-import MouseGlowEffect from "./MouseGlow";
-import '../main'
-import Resume from "./Resume";
-import ThreeScene from "./three";
+
 
 
 

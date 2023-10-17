@@ -6,7 +6,7 @@ import Contact from './Contact';
 import Home from './Home';
 import {AiOutlineHome, AiOutlineMenu, AiOutlineProject, AiOutlineContacts} from 'react-icons/ai'
 import {BsPerson} from 'react-icons/bs'
-import Sidenav from './sidenav';
+import Sidenav from './Sidenav';
 
 const ParallaxScroll = () => {
  
