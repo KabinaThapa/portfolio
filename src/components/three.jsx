@@ -60,7 +60,7 @@ const ThreeScene = () => {
 
       // Store the pivot for later use in the animate function
       pivot.userData.rotateSpeed = 0.003; // rotation speed
-      pivot.userData.minAzimuthAngle = -Math.PI / 4; // Minimum angle 
+      pivot.userData.minAzimuthAngle = -Math.PI / 8; // Minimum angle 
       pivot.userData.maxAzimuthAngle = Math.PI / 8; // Maximum angle 
     });
     window.addEventListener('resize', () => {

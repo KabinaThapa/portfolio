@@ -6,13 +6,13 @@ html, body{
   background-color: rgba(0, 0, 0, 0.957);
   background-image: url('./images/texture2.png');
  overflow: hidden;
-  
+  overscroll-behavior-y: contain ;
  
 }
 
 
 #canvas{
-
+overflow-y: hidden;
  height:100vh; 
  
  border-color: white;
