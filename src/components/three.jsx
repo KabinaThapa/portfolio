@@ -122,7 +122,7 @@ const ThreeScene = () => {
   return (
     <>
     
-      <canvas id="canvas" className='h-screen w-full border overflow-hidden'  />
+      <canvas id="canvas" className='h-full w-full border overflow-hidden fixed z-0'  />
       <ParallaxScroll>
      
         <Home />
