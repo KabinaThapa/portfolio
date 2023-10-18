@@ -1,17 +1,18 @@
 html, body{
- width: 100%;
+ 
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
- background-color: black;
+  background-color: rgba(0, 0, 0, 0.957);
+  background-image: url('./images/texture2.png');
+ overflow: hidden;
   
  
 }
 
 
 #canvas{
- background-color: rgba(0, 0, 0, 0.957);
- background-image: url('./images/texture2.png');
+
  height:100vh; 
  
  border-color: white;
