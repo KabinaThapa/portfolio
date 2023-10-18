@@ -1,11 +1,12 @@
 import * as THREE from 'three';
 import React, { useEffect } from 'react';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import Home from './Home';
 import Resume from './Resume';
 import Project from './Project';
 import ParallaxScroll from './Parallax';
+
 
 
 
@@ -40,7 +41,7 @@ const ThreeScene = () => {
     const loader = new GLTFLoader();
 
     let model;
-    loader.load('src/images/Girl.gltf', (gltf) => {
+    loader.load('/Girl.gltf', (gltf) => {
       model = gltf.scene;
       
       
