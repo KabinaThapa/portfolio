@@ -15,8 +15,8 @@ const Project = () => {
             <img className='object-contain w-full h-full' src={Glamedge}/>
           </div>
           <div className='md:w-[80%] w-[90%] flex mx-auto justify-evenly font-inter'>
-          <a href='https://github.com/KabinaThapa/GlamEdge' className=' rounded text-center bg-zinc-200 p-1 md:w-32 w-24 shadow-md shadow-slate-500'>Github</a>
-          <a href='https://glam-edge.vercel.app/' className=' rounded text-center bg-zinc-200 p-1 md:w-32 w-24 shadow-md shadow-slate-500'>Live Demo</a>
+          <a href='https://github.com/KabinaThapa/GlamEdge' className=' rounded text-center bg-zinc-200 p-1 md:w-32 w-24  hover:border-b-2 border-orange-500 '>Github</a>
+          <a href='https://glam-edge.vercel.app/' className=' rounded text-center bg-zinc-200 p-1 md:w-32 w-24 hover:border-b-2 border-orange-500 '>Live Demo</a>
 
           </div>
          
@@ -28,8 +28,8 @@ const Project = () => {
             <img className='object-contain w-full h-full' src={Weather}/>
           </div>
           <div className='md:w-[80%] w-[90%] mx-auto flex justify-evenly font-inter'>
-          <a href='https://github.com/KabinaThapa/weather-app' className=' rounded text-center bg-zinc-200 p-1 md:w-32 w-24 shadow-md shadow-slate-500'>Github</a>
-          <a href=' https://weather-app-kabinathapa.vercel.app/' className=' rounded text-center bg-zinc-200 p-1 md:w-32 w-24 shadow-md shadow-slate-500'>Live Demo</a>
+          <a href='https://github.com/KabinaThapa/weather-app' className=' rounded text-center bg-zinc-200 p-1 md:w-32 w-24 hover:border-b-2 border-orange-500'>Github</a>
+          <a href=' https://weather-app-kabinathapa.vercel.app/' className=' rounded text-center bg-zinc-200 p-1 md:w-32 w-24 hover:border-b-2 border-orange-500 '>Live Demo</a>
 
           </div>
         </div>

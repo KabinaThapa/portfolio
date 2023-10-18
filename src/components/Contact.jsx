@@ -13,16 +13,16 @@ const Contact = () => {
       <h2>Get in touch with me via social media</h2>
       <div className="logos flex justify-evenly mx-auto md:w-38  w-20 md:mx-0 text-slate-100 ">
            
-            <a href=' https://github.com/KabinaThapa' className="">
+            <a href=' https://github.com/KabinaThapa' className="hover:md:text-3xl hover:border hover:p-1 rounded-full border-orange-500">
               <FaGithub size={25}  />
             </a>
-            <a href='https://www.linkedin.com/in/kabina-thapa' className="">
+            <a href='https://www.linkedin.com/in/kabina-thapa' className="hover:md:text-3xl hover:border hover:p-1  border-orange-500">
               <FaLinkedin size={25}  />
             </a>
           </div>
       <h1>OR</h1>
       <h1>Directly Email me at </h1>
-      <a href={`mailto:${emailAddress}`} className='underline text-blue-400'>{emailAddress} </a>
+      <a href={`mailto:${emailAddress}`} className='underline text-blue-400 hover:text-blue-700'>{emailAddress} </a>
       </div>
        
     </div>

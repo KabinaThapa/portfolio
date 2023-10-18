@@ -12,7 +12,7 @@ const Resume = () => {
           <h1 className='md:text-3xl text-lg font-medium '>Kabina Thapa</h1>
           <h2 className='md:text-xl text-lg font-medium'>Entry Level Front End Developer</h2>
           <h2 className='text-sm md:text-lg'>Thapakabina28@gmail.com | 929-257-4577 | Jamaica, New York 11416</h2>
-         <p className='text-sm md:text-lg'>LinkedIn: <a className='underline text-blue-400' href='https://www.linkedin.com/in/kabina-thapa'>www.linkedin.com/in/kabina-thapa</a> | Git:<a className='underline text-blue-400' href=' https://github.com/KabinaThapa'> https://github.com/KabinaThapa</a>
+         <p className='text-sm md:text-lg'>LinkedIn: <a className='underline text-blue-400 hover:text-blue-700' href='https://www.linkedin.com/in/kabina-thapa'>www.linkedin.com/in/kabina-thapa</a> | Git:<a className='underline text-blue-400 hover:text-blue-700' href=' https://github.com/KabinaThapa'> https://github.com/KabinaThapa</a>
          </p>
              
           
@@ -73,7 +73,7 @@ const Resume = () => {
             <h2>Enabled secure payment processing through Stripe for seamless transactions.</h2>
             <h2>Implemented user authentication and registration using Next Auth.</h2>
             </div>
-            <div className='md:text-lg text-base  gap-2'><h1 className=''>Project Link: </h1> <a href=' https://glam-edge.vercel.app/' className='md:text-base text-sm underline text-blue-400'>https://glam-edge.vercel.app/</a></div>
+            <div className='md:text-lg text-base  gap-2'><h1 className=''>Project Link: </h1> <a href=' https://glam-edge.vercel.app/' className='md:text-base text-sm underline text-blue-400 hover:text-blue-700'>https://glam-edge.vercel.app/</a></div>
             </div>
             </div>
             <div className=' space-y-2 text-sm md:text-lg'>
@@ -97,7 +97,7 @@ const Resume = () => {
                  <h2>Conversion of timestamps into human-readable time formats for enhanced user experience.</h2>
                  </div>
                  <div className='md:text-xl text-base text-white  gap-2 items-center'>
-                 <h1 className=''>Project Link: </h1>  <a href='https://weather-app-kabinathapa.vercel.app/' className='underline text-blue-400 md:text-base text-sm'> https://weather-app-kabinathapa.vercel.app/</a>
+                 <h1 className=''>Project Link: </h1>  <a href='https://weather-app-kabinathapa.vercel.app/' className='underline text-blue-400 md:text-base text-sm hover:text-blue-700'> https://weather-app-kabinathapa.vercel.app/</a>
                  </div>
             </div>
            
