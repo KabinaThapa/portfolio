@@ -10,7 +10,7 @@ const Home = () => {
     <>
    
     
-    <div className=" flex flex-col justify-center   space-y-6  p-2 bg-black bg-opacity-50 md:bg-transparent md:w-[28%] md:h-auto h-full  w-full md:absolute md:top-[16rem] md:left-[24rem] fixed top-[0rem] left-[50%] transform translate-x-[-50%] " id="Home">
+    <div className=" flex flex-col justify-center   space-y-6  p-2 bg-black bg-opacity-50 md:bg-transparent md:w-[28%] md:h-auto h-screen  w-full md:absolute md:top-[16rem] md:left-[24rem] fixed top-[0rem] left-[50%] transform translate-x-[-50%] " id="Home">
      
       <div className="mainBox  flex   justify-center w-full  ">
         <header className="introBox  w-full  flex flex-col  md:items-start">
