@@ -9,6 +9,9 @@
   overscroll-behavior-y:none;
  
 }
+html{
+  scroll-behavior: smooth;
+}
 
 
 #canvas{
