@@ -5,19 +5,19 @@ import React from 'react'
 const Resume = () => {
   return (
     
-    <div className='p-[2%] flex flex-col justify-center items-center w-full bg-black bg-opacity-50 text-slate-200 font-sans' id="Resume">
-      <h1 className='md:text-3xl text-2xl mt-10'>Resume</h1>
-      <div className=' md:w-[85%] w-[95%] p-[2%] space-y-4'>
+    <div className='p-[2%] font-inter font-thin flex flex-col justify-center items-center w-full bg-black bg-opacity-50 text-slate-200 ' id="Resume">
+      <h1 className='md:text-4xl text-3xl mt-10'>Resume</h1>
+      <div className=' md:w-[85%] w-[95%]  space-y-4'>
         <div className=''>
-          <h1 className='md:text-2xl  '>Kabina Thapa</h1>
-          <h2 className='md:text-xl text-sm'>Entry Level Front End Developer</h2>
-          <h2 className='text-xs md:text-lg'>Thapakabina28@gmail.com | 929-257-4577 | Jamaica, New York 11416</h2>
-         <p className='text-xs md:text-lg'>LinkedIn: <a className='underline text-blue-400' href='https://www.linkedin.com/in/kabina-thapa'>www.linkedin.com/in/kabina-thapa</a> | Git:<a className='underline text-blue-400' href=' https://github.com/KabinaThapa'> https://github.com/KabinaThapa</a>
+          <h1 className='md:text-3xl text-lg  '>Kabina Thapa</h1>
+          <h2 className='md:text-xl text-lg'>Entry Level Front End Developer</h2>
+          <h2 className='text-sm md:text-lg'>Thapakabina28@gmail.com | 929-257-4577 | Jamaica, New York 11416</h2>
+         <p className='text-sm md:text-lg'>LinkedIn: <a className='underline text-blue-400' href='https://www.linkedin.com/in/kabina-thapa'>www.linkedin.com/in/kabina-thapa</a> | Git:<a className='underline text-blue-400' href=' https://github.com/KabinaThapa'> https://github.com/KabinaThapa</a>
          </p>
              
           
         </div>
-      <div className='md:text-lg text-xs'>
+      <div className='md:text-lg text-sm'>
         <p>As a passionate and self-motivated aspiring front-end developer, 
         I am dedicated to continuously expanding my knowledge and skills in web development. 
         Eager to embark on a career in front-end development, I have been actively learning 
@@ -26,8 +26,8 @@ const Resume = () => {
          makes me a determined and promising candidate eager to contribute to a dynamic team.</p>
          </div>
       <div className=''>
-        <h1 className='md:text-2xl font-semibold'>Technical Skills</h1>
-        <div className='grid grid-cols-2 gap-2 md:text-lg text-xs'>
+        <h1 className='md:text-2xl text-lg font-semibold'>Technical Skills</h1>
+        <div className='grid grid-cols-2 gap-2 md:text-lg text-sm'>
           <h1 className=''>Programming Languages:</h1>
           <h1>JavaScript (Intermediate), HTML (Intermediate), CSS (Intermediate), TypeScript (Basic)</h1>
           <h1 className=''>Front End Frameworks/Libraries:</h1>
@@ -51,61 +51,61 @@ const Resume = () => {
       <div className='space-y-4 '>
         
         <div className='space-y-2'>
-        <h1 className='md:text-2xl font-semibold'>Projects</h1>
-        <h1 className='md:text-2xl text-sm'>GlamEdge E-commerce Fashion website</h1>
+        <h1 className='md:text-2xl text-lg font-semibold'>Projects</h1>
+        <h1 className='md:text-2xl text-base'>GlamEdge E-commerce Fashion website</h1>
        
         <div className='space-y-2'>
           <div>
         <h1 className='md:text-xl text-sm underline'>Description:</h1>
-        <p className='md:text-lg text-xs'>Developed a visually appealing and user-friendly e-commerce website called "Glamedge" with a primary focus on front-end development. Integrated a
+        <p className='md:text-lg text-sm'>Developed a visually appealing and user-friendly e-commerce website called "Glamedge" with a primary focus on front-end development. Integrated a
            basic payment page using Stripe for secure transactions and implemented user authentication with Next Auth for seamless login and registration.</p>
            </div>
-          <div className='text-xs md:text-lg'>
-           <h1 className='md:text-xl text-sm underline'>Technical Details:</h1>
+          <div className='text-sm md:text-lg'>
+           <h1 className='md:text-xl text-base underline'>Technical Details:</h1>
            <h2>Front-End Technologies: Next.js, React-Redux Toolkit, Tailwind CSS</h2>
             <h2>Payment Integration: Stripe</h2>
             <h2>User Authentication: Next Auth</h2>
             </div>
-            <div className='text-xs md:text-lg'>
-            <h1 className='md:text-xl text-sm underline'>Features:</h1>
+            <div className='text-sm md:text-lg'>
+            <h1 className='md:text-xl text-base underline'>Features:</h1>
             <h2>Implemented category-based product listings and a shopping cart functionality.</h2>
             <h2>Designed and created a custom database using a db.json file to manage product data.</h2>
             <h2>Enabled secure payment processing through Stripe for seamless transactions.</h2>
             <h2>Implemented user authentication and registration using Next Auth.</h2>
             </div>
-            <div className='md:text-lg text-sm flex gap-2 items-center'><h1 className='underline'>Project Link: </h1> <a href=' https://glam-edge.vercel.app/' className='md:text-base text-sm underline text-blue-400'>https://glam-edge.vercel.app/</a></div>
+            <div className='md:text-lg text-base  gap-2'><h1 className=''>Project Link: </h1> <a href=' https://glam-edge.vercel.app/' className='md:text-base text-sm underline text-blue-400'>https://glam-edge.vercel.app/</a></div>
             </div>
             </div>
-            <div className=' space-y-2 text-xs md:text-lg'>
-              <h1 className='md:text-2xl text-sm '>Weather App</h1>
+            <div className=' space-y-2 text-sm md:text-lg'>
+              <h1 className='md:text-2xl text-base '>Weather App</h1>
               <div>
-              <h1 className='md:text-xl text-sm underline'>Description:</h1>
-              <p className='md:text-lg text-xs'>Developed a dynamic weather application using React, JavaScript, and Tailwind CSS. Utilized the OpenWeather API to provide real-time weather forecasts, including current conditions and 3-hour forecasts for 5 days.
+              <h1 className='md:text-xl text-base underline'>Description:</h1>
+              <p className='md:text-lg text-sm'>Developed a dynamic weather application using React, JavaScript, and Tailwind CSS. Utilized the OpenWeather API to provide real-time weather forecasts, including current conditions and 3-hour forecasts for 5 days.
                  Implemented SVG images and animations to visualize weather conditions and utilized Dayjs to convert timestamps into readable time.</p>
                  </div>
                  <div >
-                 <h1 className='md:text-xl text-sm underline'>Technical Details:</h1>
+                 <h1 className='md:text-xl text-base underline'>Technical Details:</h1>
                  <h2>Front-End Technologies: React,Javascript, Tailwind CSS</h2>
             <h2>API Integration: OpenWeather API</h2>
             <h2>Visualization: SVG images and animations</h2>
                  <h2>Time Conversion: Dayjs</h2>
                  </div>
                  <div>
-                 <h1 className='md:text-xl text-sm underline'>Features</h1>
+                 <h1 className='md:text-xl text-base underline'>Features</h1>
                  <h2>Real-time weather forecasts for current conditions and 3-hour intervals over 5 days.</h2>
                  <h2>Visual representation of weather conditions using SVG images and animations.</h2>
                  <h2>Conversion of timestamps into human-readable time formats for enhanced user experience.</h2>
                  </div>
-                 <div className='md:text-xl text-sm text-white flex gap-2 items-center'>
-                 <h1 className='underline'>Project Link: </h1>  <a href='https://weather-app-kabinathapa.vercel.app/' className='underline text-blue-400 md:text-base text-sm'> https://weather-app-kabinathapa.vercel.app/</a>
+                 <div className='md:text-xl text-base text-white  gap-2 items-center'>
+                 <h1 className=''>Project Link: </h1>  <a href='https://weather-app-kabinathapa.vercel.app/' className='underline text-blue-400 md:text-base text-sm'> https://weather-app-kabinathapa.vercel.app/</a>
                  </div>
             </div>
            
 
         </div>
       <div className=''>
-        <h1 className='md:text-2xl font-semibold'>Education</h1>
-        <div className='text-xs md:text-lg grid grid-cols-2 gap-3'>
+        <h1 className='md:text-2xl text-lg font-semibold'>Education</h1>
+        <div className='text-sm md:text-lg grid grid-cols-2 gap-3'>
           <div>
           <h1>Queens College/CUNY</h1>
          

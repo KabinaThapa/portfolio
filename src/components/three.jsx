@@ -31,7 +31,7 @@ const ThreeScene = () => {
 
     // Add a directional light to the scene
     const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-    directionalLight.position.set(10, 10, 10);
+    directionalLight.position.set(10, 5, 5);
     scene.add(directionalLight);
 
     const loader = new GLTFLoader();

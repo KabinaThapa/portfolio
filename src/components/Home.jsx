@@ -10,7 +10,7 @@ const Home = () => {
     <>
    
     
-    <div className=" font-custom  flex flex-col justify-center   space-y-2 p-2 h-full md:bg-transparent md:w-[28%] md:h-auto  w-full md:absolute md:top-[16rem] top-[50%] md:left-[24rem] fixed  left-[50%] transform translate-x-[-50%] translate-y-[-50%] " id="Home">
+    <div className=" font-custom  flex flex-col justify-center   space-y-2 p-2 h-full md:bg-transparent md:w-[28%] md:h-auto  w-full md:absolute  top-[50%]  fixed  md:left-[30%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] " id="Home">
      
       <div className="mainBox  flex   justify-center w-full  p-2  ">
         <header className="introBox  w-full  flex flex-col  md:items-start">
@@ -45,7 +45,7 @@ const Home = () => {
       </div>
      
        
-      <div className="logos flex justify-between  md:w-[50%] w-16 md:text-2xl text-xl md:mx-0 text-slate-100  pl-2 ">
+      <div className="logos flex justify-between w-16  md:w-20 md:text-2xl text-xl md:mx-0 text-slate-100  pl-2 ">
       <a href=' https://github.com/KabinaThapa' className="">
               <FaGithub   />
             </a>

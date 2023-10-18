@@ -15,6 +15,7 @@ export default {
         caprasimo:[ 'Caprasimo'],
         aclonica:['Aclonica', 'sans-serif'],
         noto:['Noto Sans Osmanya', 'sans-serif'],
+        inter:[ 'Inter', 'sans-serif']
       },
 
     },
