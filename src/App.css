@@ -12,7 +12,7 @@ html, body{
 #canvas{
  background-color: rgba(0, 0, 0, 0.957);
  background-image: url('./images/texture2.png');
-  
+ height: 100vh; 
 }
 
 
