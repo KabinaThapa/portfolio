@@ -14,7 +14,7 @@ import ParallaxScroll from './Parallax';
 const ThreeScene = () => {
   useEffect(() => {
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(95, window.innerWidth / window.innerHeight, 0.1, 1000);
     
     // Adjust the camera position to the right
     camera.position.set(0, 0, 5);
@@ -25,14 +25,10 @@ const ThreeScene = () => {
     const renderer = new THREE.WebGLRenderer({ canvas,alpha:true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
-//add eventlistener
-    window.addEventListener('resize',()=>{
-  renderer.setSize(window.innerWidth, window.innerHeight)
-  camera.aspect=window.innerWidth/window.innerHeight
-  camera.updateProjectionMatrix()
-  camera.position.set(0,0,7)
 
-})
+ 
+
+
     // Add a directional light to the scene
     const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
     directionalLight.position.set(10, 10, 10);
@@ -57,17 +53,28 @@ const ThreeScene = () => {
       model.position.sub(center);
 
       // Define the pivot offset based on your desired pivot point
-      const pivotOffsetX = 0; // Adjust as needed to move the model to the end of the canvas
-      const pivotOffsetY = 0; // Adjust as needed
-      const pivotOffsetZ = 0; // Adjust as needed
+      const pivotOffsetX = 0; // 
+      const pivotOffsetY = 0; // 
+      const pivotOffsetZ = 0; // 
       pivot.position.set(pivotOffsetX, pivotOffsetY, pivotOffsetZ);
 
       // Store the pivot for later use in the animate function
       pivot.userData.rotateSpeed = 0.003; // rotation speed
-      pivot.userData.minAzimuthAngle = -Math.PI / 8; // Minimum angle 
+      pivot.userData.minAzimuthAngle = -Math.PI / 4; // Minimum angle 
       pivot.userData.maxAzimuthAngle = Math.PI / 8; // Maximum angle 
     });
-
+    window.addEventListener('resize', () => {
+      const newWidth = window.innerWidth;
+      const newHeight = window.innerHeight;
+    
+      // Update the size of the renderer
+      renderer.setSize(newWidth, newHeight);
+    
+      // Update the camera's aspect ratio
+      camera.aspect = newWidth / newHeight;
+      camera.updateProjectionMatrix();
+    });
+    
     const controls = new OrbitControls(camera, canvas);
     controls.enableDamping = true; // Enable camera damping for smoother rotation
     controls.dampingFactor = 0.05; // Adjust damping factor for smoother rotation
@@ -83,6 +90,7 @@ const ThreeScene = () => {
 
       if (model) {
          // Rotate the pivot object instead of the model
+         
         const pivot = model.parent;
         const rotateSpeed = pivot.userData.rotateSpeed;
 
@@ -114,7 +122,7 @@ const ThreeScene = () => {
   return (
     <>
     
-      <canvas id="canvas" style={{minWidth:'320px'}} />
+      <canvas id="canvas" className='h-screen' />
       <ParallaxScroll>
      
         <Home />

@@ -10,13 +10,13 @@ const Home = () => {
     <>
    
     
-    <div className=" flex flex-col justify-center   space-y-6  p-2 bg-black bg-opacity-50 md:bg-transparent md:w-[28%]  w-full md:absolute md:top-[16rem] md:left-[24rem] fixed top-[20rem] left-[50%] transform translate-x-[-50%] " id="Home">
+    <div className=" flex flex-col justify-center   space-y-6  p-2 bg-black bg-opacity-50 md:bg-transparent md:w-[28%] md:h-auto h-full  w-full md:absolute md:top-[16rem] md:left-[24rem] fixed top-[0rem] left-[50%] transform translate-x-[-50%] " id="Home">
      
-      <div className="mainBox  flex   justify-center w-full ">
-        <header className="introBox  w-full  flex flex-col items-center md:items-start ">
+      <div className="mainBox  flex   justify-center w-full  ">
+        <header className="introBox  w-full  flex flex-col  md:items-start">
           <h1 className="md:text-4xl text-2xl text-white">Hi !</h1>
-          <h1 className="font-semibold lg:text-3xl  text-xl  mb-2 pt-2 text-center text-white ">I'm Kabina Thapa</h1>
-          <h2 className=" lg:text-2xl text-[1rem] text-gray-400 text-center md:text-left md:flex">
+          <h1 className="font-semibold lg:text-3xl  text-xl  mb-2 pt-2  text-white ">I'm Kabina Thapa</h1>
+          <h2 className=" lg:text-2xl text-sm text-gray-400 flex  md:text-left ">
             {" "}
             I'm
             <TypeAnimation
@@ -45,7 +45,7 @@ const Home = () => {
       </div>
      
        
-      <div className="logos flex justify-between mx-auto w-[50%] md:mx-0 text-slate-100 ">
+      <div className="logos flex justify-between  w-[50%] md:mx-0 text-slate-100 ">
             <a className="">
               <FaTwitter size={25} />
             </a>
