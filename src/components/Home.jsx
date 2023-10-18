@@ -1,6 +1,6 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 
 
@@ -10,13 +10,13 @@ const Home = () => {
     <>
    
     
-    <div className=" flex flex-col justify-center   space-y-6  p-2  md:bg-transparent md:w-[28%] md:h-auto  w-full md:absolute md:top-[16rem] top-[20rem] md:left-[24rem] fixed  left-[50%] transform translate-x-[-50%] " id="Home">
+    <div className=" font-custom  flex flex-col justify-center   space-y-2 p-2 h-full md:bg-transparent md:w-[28%] md:h-auto  w-full md:absolute md:top-[16rem] top-[50%] md:left-[24rem] fixed  left-[50%] transform translate-x-[-50%] translate-y-[-50%] " id="Home">
      
-      <div className="mainBox  flex   justify-center w-full  ">
+      <div className="mainBox  flex   justify-center w-full  p-2  ">
         <header className="introBox  w-full  flex flex-col  md:items-start">
-          <h1 className="md:text-4xl text-2xl text-white">Hi !</h1>
-          <h1 className="font-semibold lg:text-3xl  text-xl  mb-2 pt-2  text-white ">I'm Kabina Thapa</h1>
-          <h2 className=" lg:text-2xl text-sm text-gray-400 flex  md:text-left ">
+          <h1 className=" text-4xl text-white">Hi !</h1>
+          <h1 className="font-semibold lg:text-3xl  text-2xl  mb-2 pt-2  text-white ">I'm Kabina Thapa</h1>
+          <h2 className=" lg:text-2xl text-lg text-gray-400 flex  md:text-left font-thin">
             {" "}
             I'm
             <TypeAnimation
@@ -45,18 +45,12 @@ const Home = () => {
       </div>
      
        
-      <div className="logos flex justify-between  w-[50%] md:mx-0 text-slate-100 ">
-            <a className="">
-              <FaTwitter size={25} />
+      <div className="logos flex justify-between  md:w-[50%] w-16 md:text-2xl text-xl md:mx-0 text-slate-100  pl-2 ">
+      <a href=' https://github.com/KabinaThapa' className="">
+              <FaGithub   />
             </a>
-            <a className="">
-              <FaFacebook size={25}  />
-            </a>
-            <a className="">
-              <FaInstagram size={25}  />
-            </a>
-            <a className="">
-              <FaLinkedin size={25}  />
+            <a href='https://www.linkedin.com/in/kabina-thapa' className="">
+              <FaLinkedin   />
             </a>
           </div>
      
