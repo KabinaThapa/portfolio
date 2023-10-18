@@ -11,7 +11,8 @@ const Sidenav = ({scrollToOffset}) => {
   return (
     
     <div>
-    {nav ? (<h1 onClick={handleNav} className='absolute top-4 left-4  md:hidden z-[60] text-white text-xl' >X</h1>):( <AiOutlineMenu onClick={handleNav} className='absolute top-4 left-4 z-50 text-xl  md:hidden  text-white' />)}
+    {nav ? (<h1 onClick={handleNav} className='absolute top-4 left-4  md:hidden z-[60] text-white text-xl' >X</h1>):
+    ( <AiOutlineMenu onClick={handleNav} className='absolute top-4 left-4 z-50 text-2xl  md:hidden   text-white ' />)}
     {
       nav ? (
         <div className= 'div fixed w-[50%] mx-auto h-screen flex-col flex justify-center items-center md:mr-4  z-50  backdrop-blur-lg'>
@@ -28,7 +29,7 @@ const Sidenav = ({scrollToOffset}) => {
             <BsPerson size={20}/>
             <span className='pl-2'> Resume</span>
           </button>
-          <button onClick={() => scrollToOffset(6)} className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-700 cursor-pointer hover:scale-110 ease-in duration-200">
+          <button onClick={() => scrollToOffset(5)} className=" w-3/4 flex justify-center items-center  border rounded-xl ml-4  mr-4 mb-4 bg-slate-200 p-1 shadow-lg shadow-gray-700 cursor-pointer hover:scale-110 ease-in duration-200">
             <AiOutlineContacts size={20}/>
             <span className='pl-2'>Contact</span>
           </button>

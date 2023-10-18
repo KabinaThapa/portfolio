@@ -6,8 +6,8 @@ import Weather from '../assets/weather.png'
 const Project = () => {
   return (
     
-    <div className='font-noto Project flex flex-col justify-center items-center w-full h-screen bg-black bg-opacity-50 p-[2%] space-y-4 ' id="Projects">
-      <h1 className='md:text-4xl text-3xl text-white mt-10'>Recent Projects</h1>
+    <div className='font-inter Project flex flex-col justify-center items-center w-full h-screen bg-black bg-opacity-50 p-[2%] space-y-4 ' id="Projects">
+      <h1 className='md:text-4xl text-3xl text-white mt-10 font-semibold'>Recent Projects</h1>
       <div className='grid md:grid-cols-2 md:gap-12 gap-8 md:p-2 w-[85%] grid-cols-1'>
         <div className='p-2 space-y-2 text-center'>
           <h1 className='md:text-2xl text-lg text-white underline'>GlamEdge Ecommerce App</h1>

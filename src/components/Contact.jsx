@@ -6,8 +6,9 @@ const Contact = () => {
   return (
     <>
     <div id="Contact" className='w-full  flex flex-col mx-auto  pl-4 pr-4 bg-black bg-opacity-50 h-screen text-slate-200  md:pl-16 md:pr-16'>
-    <h1 className='text-center md:text-4xl text-2xl font-semibold mt-10'>Contact</h1>
-      <div className='flex flex-col items-center justify-center w-full h-full md:text-2xl gap-4'>
+   
+      <div className='font-inter flex flex-col items-center justify-center w-full h-full md:text-2xl text-xl gap-4'>
+      <h1 className='text-center md:text-4xl text-3xl font-semibold mt-10'>Contact</h1>
       
       <h2>Get in touch with me via social media</h2>
       <div className="logos flex justify-evenly mx-auto md:w-38  w-20 md:mx-0 text-slate-100 ">
