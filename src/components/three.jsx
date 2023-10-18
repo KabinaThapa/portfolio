@@ -75,6 +75,7 @@ const ThreeScene = () => {
       camera.updateProjectionMatrix();
     });
     
+    
     const controls = new OrbitControls(camera, canvas);
     controls.enableDamping = true; // Enable camera damping for smoother rotation
     controls.dampingFactor = 0.05; // Adjust damping factor for smoother rotation

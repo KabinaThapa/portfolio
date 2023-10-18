@@ -3,8 +3,9 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  background-color: rgba(0, 0, 0, 0.957);
+  background-color: red;
   background-image: url('./images/texture2.png');
+ 
  overflow: hidden;
   overscroll-behavior-y:none;
  
