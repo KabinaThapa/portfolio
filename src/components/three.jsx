@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import React, { useEffect,useState } from 'react';
+import React, { useEffect } from 'react';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import Home from './Home';
@@ -12,7 +12,6 @@ import ParallaxScroll from './Parallax';
 
 
 const ThreeScene = () => {
-  const [canvasHeight, setCanvasHeight] = useState(window.innerHeight)
   useEffect(() => {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(95, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -64,15 +63,18 @@ const ThreeScene = () => {
       pivot.userData.minAzimuthAngle = -Math.PI / 8; // Minimum angle 
       pivot.userData.maxAzimuthAngle = Math.PI / 8; // Maximum angle 
     });
-    const handleResize = () => {
-      setCanvasHeight(window.innerHeight);
-      camera.aspect = window.innerWidth / canvasHeight;
+    window.addEventListener('resize', () => {
+      const newWidth = window.innerWidth;
+      const newHeight = window.innerHeight;
+    
+      // Update the size of the renderer
+      renderer.setSize(newWidth, newHeight);
+    
+      // Update the camera's aspect ratio
+      camera.aspect = newWidth / newHeight;
       camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, canvasHeight);
-    };
-
-    window.addEventListener('resize', handleResize);
-   
+    });
+    
     
     const controls = new OrbitControls(camera, canvas);
     controls.enableDamping = true; // Enable camera damping for smoother rotation
@@ -113,15 +115,10 @@ const ThreeScene = () => {
 
       controls.update();
       renderer.render(scene, camera);
-
     }
 
     animate();
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, [canvasHeight]);
-  
+  }, []);
 
   return (
     <>
