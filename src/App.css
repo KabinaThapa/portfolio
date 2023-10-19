@@ -5,7 +5,7 @@
   scroll-behavior: smooth;
   background-color: red;
   background-image: url('./images/texture2.png');
- 
+  background-position: center top;
  overflow: hidden;
   overscroll-behavior-y:none;
  
